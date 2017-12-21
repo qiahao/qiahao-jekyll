@@ -7,10 +7,10 @@
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <meta name="keyword" content="{{ page.keyword | default: site.keyword | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}"">
-  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}"">
+  <link rel="stylesheet" href="{{ './assets/main.css' }}">
+  <link rel="stylesheet" href="{{ './assets/style.css'}}">
   {% if page.css %} 
-  <link rel="stylesheet" href="{{ page.css | relative_url }}">
+  <link rel="stylesheet" href="{{ page.css }}">
   {% endif %}
 
   {% if jekyll.environment == 'production' %}
