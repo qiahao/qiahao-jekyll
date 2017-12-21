@@ -4,10 +4,11 @@
 <body>
     <div class="default {{page.class}}">
         <div class="nav-wrapper">
+	        {% include header.html %}
         </div>
         {{ content }}
         <div class="footer-wrapper gray">
-        {% include aside.html %}
+
         </div>
     </div>
 </body>
