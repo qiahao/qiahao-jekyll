@@ -1,0 +1,15 @@
+
+<ul class="post-list">
+    {% for post in site.posts reversed %}
+    <li>
+        <h3 class="post-link">
+            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h3>
+        <div> {{ post.excerpt | striphtml }} </div>
+        <div class="post-meta">
+            <span>更新：{{ post.date | date: "%Y-%m-%d %H:%M" }}</span>
+            <span>来源：{{ post.quote | default: "恰好"}}</span>
+        </div>
+    </li>
+    {% endfor %}
+</ul>

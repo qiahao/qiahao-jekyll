@@ -1,0 +1,19 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <title>{{ site.title | escape }}{% if page.title %} - {{ page.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="keyword" content="{{ page.keyword | default: site.keyword | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}"">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}"">
+  {% if page.css %} 
+  <link rel="stylesheet" href="{{ page.css | relative_url }}">
+  {% endif %}
+
+  {% if jekyll.environment == 'production' %}
+  {% include site-analytics.html %}
+  {% endif %}
+</head>

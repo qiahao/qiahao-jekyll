@@ -1,0 +1,25 @@
+$grid-count: 12;
+
+.row {
+	display: block;
+	clear: right;
+	&::after{
+		content: '';
+		display: block;
+		height: 0;
+		clear: both;
+	}
+}
+
+%fll{
+	float: left;
+	min-height: 1px;
+};
+
+
+@for $i from 1 through $grid-count { 
+    .col-#{$i}{
+    	@extend %fll;
+        width: ($i / $grid-count) * 100%;
+    }
+}
