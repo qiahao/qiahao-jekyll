@@ -17,8 +17,8 @@ title: 恰好
 email: 404546074@qq.com
 description: > # this means to ignore newlines until "baseurl:"
   个人博客、个人Jekyll博客
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://qiahao.github.io/qiahao-jekyll/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/qiahao-jekyll" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: qiahao
 github_username:  qiahao
 
