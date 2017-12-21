@@ -1,6 +1,16 @@
 
+
+{% if page.postList %}
+    {% assign arr = site.categories[page.postList] %}
+    {% assign limitNum = null %}
+{% else  %}
+    {% assign arr = site.posts %}
+    {% assign limitNum = 30 %}
+{% endif %}
+
+
 <ul class="post-list">
-    {% for post in site.posts reversed %}
+    {% for post in arr limit: limitNum reversed %}
     <li>
         <h3 class="post-link">
             <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>

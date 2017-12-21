@@ -3,7 +3,6 @@ layout: post
 title:  "Welcome to vue!"
 date:   2017-12-20 09:24:16 +0800
 categories: vue
-<!-- permalink: page -->
 ---
 
 **router/index.js**

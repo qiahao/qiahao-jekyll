@@ -1,5 +1,13 @@
 <div class="aside pl20">
-	
-aside
-
+    <ul>
+        {% for category in site.data.categories %} {% if category.name == page.postList %}
+        <li>
+            <a class="activated" href="{{site.baseurl}}{{category.url}}" title="{{category.name}}">{{category.name}}</a>
+        </li>
+        {% else %}
+        <li>
+            <a href="{{site.baseurl}}{{category.url}}" title="{{category.name}}">{{category.name}}</a>
+        </li>
+        {% endif %} {% endfor %}
+    </ul>
 </div>

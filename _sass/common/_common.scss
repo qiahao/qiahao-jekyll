@@ -1,0 +1,41 @@
+// post
+
+.post-meta > span {
+    margin-right: 10px;
+}
+.post-list {
+	.post-link{
+		padding-bottom: 10px;
+		border-bottom: 1px solid #999;
+	}
+}
+.post{
+	.post-header{
+		border-bottom: 1px solid #999;
+	}
+}
+
+
+
+.main-aside {
+    .aside {
+        li {
+            list-style: none;
+            margin-bottom: 6px;
+
+            a{
+            	display: block;
+            	padding-left: 20px;
+            	border: 1px solid #969696;
+            	border-radius: 3px;
+            	line-height: 30px;
+            	&:hover,&.activated{
+            		background-color: $link-hover-color;
+            		border-color: $link-hover-color;
+            		color: #fff;
+            	}
+            }
+        }
+        
+    }
+}
