@@ -16,7 +16,12 @@
     padding: 0;
     margin: 0;
 }
-
+body{
+    font-size: 14px;
+}
+blockquote{
+    font-size: 12px;
+}
 .cf {
     @extend %clearfix;
 }
