@@ -13,8 +13,9 @@
 	.post-header{
 		border-bottom: 1px solid #999;
 	}
-    ul{
+    ul,ol{
         margin-bottom: 20px;
+        list-style-position: inside;
     }
 }
 
